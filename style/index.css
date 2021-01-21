@@ -4,7 +4,6 @@
 
 }
 h1{
-    display:flex-block;
     text-align:center;
     font-family:'Megrim';
     font-size:16em;
@@ -22,7 +21,7 @@ li{
     font-size:2em;
     font-family:'Oswald';
     padding:24px 36px;
-    border: 1px solid #black;
+    border: 1px solid black;
 }
 li:last-child {
   border-right: none;
@@ -97,7 +96,7 @@ div.flex-box{
 footer{
     height:150px;
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
     background-color:gray;
 }
@@ -109,8 +108,19 @@ button{
 #contactButton{
     padding:.5% 2%;
     font-size:1.5em;
+    align-self: center;
 }
 #myProjectsButton{
     padding:2% 10%;
     font-size:1.5em;
+}
+#socialMediaButtons{
+    diplay:flex;
+}
+.fab{
+    font-size:32px;
+    color:#6b0a03;
+}
+div a{
+    padding:10px;
 }
