@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><link
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel='stylesheet' href='style/normalize.css'>
+    <link rel="stylesheet" href='style/index.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Megrim&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Sarah Guidry Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Sarah Guidry</h1>
+        <nav class='navbar'>
+            <ul class='navitems flex-container'>
+                <li id='homeNav'><a class="active" id='homeNavButton' href='index.html'>Home</a></li>
+                <li id='aboutNav'><a href='about.html'>About</a></li>
+                <li id='contactNav'><a href='contact.html'>Contact</a></li>
+                <li id='projectsNav'><a href='projects.html'>Projects</a></li>
+            </ul>
+        </nav>
+        <h2>Introducing My Site</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet orci at felis suscipit, a tincidunt urna eleifend. Pellentesque suscipit massa a turpis sodales, eu luctus dolor maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam dignissim ex lobortis neque scelerisque, eu egestas tellus mattis. Morbi facilisis gravida est, eget feugiat lorem sodales nec. Nunc venenatis odio urna, ut aliquet elit sollicitudin non. Vestibulum nisi risus, finibus id scelerisque a, mattis at mauris. Praesent quam augue, tempus accumsan vestibulum molestie, euismod nec nulla. In hac habitasse platea dictumst. Morbi volutpat velit libero, a semper ante ullamcorper quis. </p>
+    </header>
+    <section>
+        <img id='mainProject' src='https://picsum.photos/1200/800' alt='ProjectScreenshot'>
+    </section>
+    <section id='sideProjects' class='flex-container'>
+        <img id='sideProj1' src="https://picsum.photos/300/800?random=1" alt="Side Project 1">
+        <img id='sideProj2' src="https://picsum.photos/300/800?random=2" alt="Side Project 2">
+        <img id='sideProj3' src="https://picsum.photos/300/800?random=3" alt="Side Project 3">
+        <img id='sideProj4' src="https://picsum.photos/300/800?random=4" alt="Side Project 4">
+        <div class='flex-box'>
+            <button id='myProjectsButton'><a href='projects.html'>My Projects</a></button>
+            <p id='sideProjDescription'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, sem ac egestas bibendum, ante sapien fringilla mi, sit amet faucibus lorem ipsum nec risus. Aliquam et tincidunt nisi. Nam.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <button id='contactButton'><a href='contact.html'>Contact Me</a></button>
+    </footer>
 </body>
 </html>
