@@ -1,1 +1,129 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+    font-family:Oswald;
+
+}
+h1{
+    text-align:center;
+    font-family:'Megrim';
+    font-size:12em;
+    justify-content:center;
+    margin:10px;
+}
+h2{
+    font-family:Megrim;
+    font-size:7em;
+    text-align:center;
+    margin-top:80px;
+}
+li{
+    display:inline-flex;
+    font-size:2em;
+    font-family:'Oswald';
+    padding:24px 36px;
+    border: 1px solid black;
+}
+li:last-child {
+  border-right: none;
+}
+a{
+    color:white;
+}
+header.flex-container{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    flex-flow:row wrap;
+    list-style-type:none;
+}
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.navitems{
+    padding:10px;
+}
+.ul{
+    list-style-type:none;
+    padding:40%;
+    border: 3px solid black;
+}
+nav ul{
+    background-color:black;
+}
+#homeNav, #aboutNav, #contactNav{
+    border-right:3px solid black;
+}
+.active{
+        background-color:white;
+        color:black;
+}
+header p{
+    font-size:3em;
+    margin: 7.5%;
+    padding:10px;
+    text-align:center;
+}
+#mainProject{
+    width:100%;
+    height:50%;
+    padding:10px;
+}
+#sideProjects{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:nowrap;
+    margin:0;
+    padding:0;
+}
+
+div.flex-box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:0;
+    width:300px;
+}
+#sideProjDescription{
+    font-size:24px;
+    margin:10px;
+    width:60%;
+    text-align:center;
+}
+footer{
+    height:150px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color:gray;
+}
+button{
+    background-color:#6b0a03;
+    border:none;
+    color:white;
+}
+#contactButton{
+    padding:.5% 2%;
+    font-size:1.5em;
+    align-self: center;
+    text-decoration:none;
+}
+#myProjectsButton{
+    padding:2% 10%;
+    font-size:1.5em;
+}
+#socialMediaButtons{
+    display:flex;
+}
+.fab{
+    font-size:28px;
+    color:#6b0a03;
+}
+div a{
+    padding:10px;
+}

@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><link
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel='stylesheet' href='style/normalize.css'>
+    <link rel="stylesheet" href='style/index.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Megrim&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Sarah Guidry Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Sarah Guidry</h1>
+        <nav class='navbar'>
+            <ul class='navitems flex-container'>
+                <li id='homeNav' class='active'><a class="active" id='homeNavButton' href='index.html'>Home</a></li>
+                <li id='aboutNav'><a href='about.html'>About</a></li>
+                <li id='contactNav'><a href='contact.html'>Contact</a></li>
+                <li id='projectsNav'><a href='projects.html'>Projects</a></li>
+            </ul>
+        </nav>
+        <h2>Introducing My Site</h2>
+        <p>Hi! My name is Sarah Guidry. I'm a full stack web developer. Check out some of my work.</p>
+    </header>
+    <section>
+        <img id='mainProject' src='https://picsum.photos/1200/800' alt='ProjectScreenshot'>
+    </section>
+    <section id='sideProjects' class='flex-container'>
+
+        <img id='sideProj2' src="https://picsum.photos/350/800?random=2" alt="Side Project 2">
+        <img id='sideProj3' src="https://picsum.photos/350/800?random=3" alt="Side Project 3">
+        <img id='sideProj4' src="https://picsum.photos/350/800?random=4" alt="Side Project 4">
+        <div class='flex-box'>
+            <button id='myProjectsButton'><a href='projects.html'>My Projects</a></button>
+            <p id='sideProjDescription'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, sem ac egestas bibendum, ante sapien fringilla mi, sit amet faucibus lorem ipsum nec risus. Aliquam et tincidunt nisi. Nam.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <button id='contactButton'><a href='contact.html'>Contact Me</a></button>
+        <div id='socialMediaButtons' class='flex-container'>
+            <a id='first' href='https://www.facebook.com/guidrysa/'><i class='fab fa-facebook'></i></a>
+            <a href='https://www.linkedin.com/in/sarah-guidry/'><i class='fab fa-linkedin-in'></i></a>
+            <a href='https://github.com/LambSarah'><i class='fab fa-github'></i></a>
+            <a href="https://www.instagram.com/boredeyeball/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
