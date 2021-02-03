@@ -1,129 +1,230 @@
 * {
     box-sizing: border-box;
-    font-family:Oswald;
+    font-family: Oswald;
+}
 
+html {
+    font-size: 62.50%;
 }
-h1{
-    text-align:center;
-    font-family:'Megrim';
-    font-size:12em;
-    justify-content:center;
-    margin:10px;
+
+body {
+    background-image: url("assets/cancerConstellation.jpg");
+    background-position: center;
 }
-h2{
-    font-family:Megrim;
-    font-size:7em;
-    text-align:center;
-    margin-top:80px;
+
+@media(max-width:800px) {
+    body {
+        display: flex;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 18rem;
+    }
 }
-li{
-    display:inline-flex;
-    font-size:2em;
-    font-family:'Oswald';
-    padding:24px 36px;
-    border: 1px solid black;
+
+@media(max-width:500px) {
+    * {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    h1 {
+        font-size: 10rem;
+        overflow: auto;
+    }
+    img {
+        flex-direction: column;
+        flex-shrink: 3;
+    }
+    #sideProjects {
+        flex-flow: column nowrap;
+        display: flex;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 40%;
+        border: 3px solid #EDBE55;
+    }
+    #sideProjects {
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }
+
+h1 {
+    text-align: center;
+    font-family: 'Megrim';
+    font-size: 25rem;
+    justify-content: center;
+    margin: 10px;
+    color: #EDBE55;
+}
+
+h2 {
+    font-family: Megrim;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 80px;
+    color: #EDBE55;
+}
+
+li {
+    display: inline-flex;
+    font-size: 5.5rem;
+    font-family: 'Oswald';
+    padding: 24px 36px;
+    border: 1px solid #EDBE55;
+}
+
 li:last-child {
-  border-right: none;
-}
-a{
-    color:white;
-}
-header.flex-container{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    flex-flow:row wrap;
-    list-style-type:none;
-}
-.navbar{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.navitems{
-    padding:10px;
-}
-.ul{
-    list-style-type:none;
-    padding:40%;
-    border: 3px solid black;
-}
-nav ul{
-    background-color:black;
-}
-#homeNav, #aboutNav, #contactNav{
-    border-right:3px solid black;
-}
-.active{
-        background-color:white;
-        color:black;
-}
-header p{
-    font-size:3em;
-    margin: 7.5%;
-    padding:10px;
-    text-align:center;
-}
-#mainProject{
-    width:100%;
-    height:50%;
-    padding:10px;
-}
-#sideProjects{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    flex-wrap:nowrap;
-    margin:0;
-    padding:0;
+    border-right: none;
 }
 
-div.flex-box{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:0;
-    padding:0;
-    width:300px;
+a {
+    color: #274073;
+    text-decoration: none;
 }
-#sideProjDescription{
-    font-size:24px;
-    margin:10px;
-    width:60%;
-    text-align:center;
+
+p {
+    color: #EDBE55;
 }
-footer{
-    height:150px;
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    background-color:gray;
+
+#headerParagraph {
+    font-size: 5.5rem;
 }
-button{
-    background-color:#6b0a03;
-    border:none;
-    color:white;
+
+header.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+    list-style-type: none;
 }
-#contactButton{
-    padding:.5% 2%;
-    font-size:1.5em;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navitems {
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 40%;
+    border: 3px solid #EDBE55;
+}
+
+nav ul {
+    background-color: #EDBE55;
+}
+
+#homeNav,
+#aboutNav,
+#contactNav {
+    border-right: 3px solid #EDBE55;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+header p {
+    font-size: 3em;
+    margin: 7.5%;
+    padding: 10px;
+    text-align: center;
+}
+
+#mainProjectSection {
+    display: block;
+    width: 99.9%;
+}
+
+#mainProject {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+}
+
+#sideProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+#sideProj2,
+#sideProj3,
+#sideProj4 {
+    height: 150rem;
+    width: 50rem;
+}
+
+div.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+#sideProjDescription {
+    border: black dashed 2px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+}
+
+button {
+    background-color: #EDBE55;
+    border: none;
+    color: white;
+}
+
+#contactButton {
+    padding: .5% 2%;
+    font-size: 4rem;
     align-self: center;
-    text-decoration:none;
+    text-decoration: none;
 }
-#myProjectsButton{
-    padding:2% 10%;
-    font-size:1.5em;
+
+#myProjectsButton {
+    padding: 2% 10%;
+    font-size: 4rem;
 }
-#socialMediaButtons{
-    display:flex;
+
+#socialMediaButtons {
+    display: flex;
 }
-.fab{
-    font-size:28px;
-    color:#6b0a03;
+
+.fab {
+    font-size: 28px;
+    color: #EDBE55;
 }
-div a{
-    padding:10px;
+
+div a {
+    padding: 10px;
 }
