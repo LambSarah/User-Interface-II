@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"><link
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style/normalize.css'>
     <link rel="stylesheet" href='style/index.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,28 +11,29 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Sarah Guidry Portfolio</title>
 </head>
+
 <body>
     <header>
         <h1>Sarah Guidry</h1>
-        <nav class='navbar'>
+        <nav class='navbar flex-container'>
             <ul class='navitems flex-container'>
-                <li id='homeNav' class='active'><a class="active" id='homeNavButton' href='index.html'>Home</a></li>
-                <li id='aboutNav'><a href='about.html'>About</a></li>
-                <li id='contactNav'><a href='contact.html'>Contact</a></li>
-                <li id='projectsNav'><a href='projects.html'>Projects</a></li>
+                <li id='homeNav' class='active flex-important'><a class="active" id='homeNavButton' href='index.html'>Home</a></li>
+                <li id='aboutNav' class='flex-important'><a href='about.html'>About</a></li>
+                <li id='contactNav' class='flex-important'><a href='contact.html'>Contact</a></li>
+                <li id='projectsNav' class='flex-important'><a href='projects.html'>Projects</a></li>
             </ul>
         </nav>
         <h2>Introducing My Site</h2>
-        <p>Hi! My name is Sarah Guidry. I'm a full stack web developer. Check out some of my work.</p>
+        <p id='headerParagraph'>Hi! My name is Sarah Guidry. I'm a full stack web developer. Check out some of my work.</p>
     </header>
-    <section>
-        <img id='mainProject' src='https://picsum.photos/1200/800' alt='ProjectScreenshot'>
+    <section id='mainProjectSection'>
+        <img id='mainProject' src='https://i.picsum.photos/id/618/2509/1673.jpg?hmac=COcy9vwoZ9UeEJvOaFkdvr1zroYRFrc7SOUYp-wkyQs' alt='ProjectScreenshot'>
     </section>
     <section id='sideProjects' class='flex-container'>
 
-        <img id='sideProj2' src="https://picsum.photos/350/800?random=2" alt="Side Project 2">
-        <img id='sideProj3' src="https://picsum.photos/350/800?random=3" alt="Side Project 3">
-        <img id='sideProj4' src="https://picsum.photos/350/800?random=4" alt="Side Project 4">
+        <img id='sideProj2' src="https://i.picsum.photos/id/1079/4496/3000.jpg?hmac=G-dJcpU08vEMqjUz2rb3IxjOG99rcePqW9BF1IsPLf0" alt="Side Project 2">
+        <img id='sideProj3' src="https://i.picsum.photos/id/352/3264/2176.jpg?hmac=3yabp6hSm3kYnpkVROyHcC_yE0AH6eRGotMnyBnPnRc" alt="Side Project 3">
+        <img id='sideProj4' src="https://i.picsum.photos/id/497/4896/2760.jpg?hmac=FztWnSpHnhiCaAzhAbuf_VDHMUx2LAPFy3VyjGq-JRI" alt="Side Project 4">
         <div class='flex-box'>
             <button id='myProjectsButton'><a href='projects.html'>My Projects</a></button>
             <p id='sideProjDescription'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, sem ac egestas bibendum, ante sapien fringilla mi, sit amet faucibus lorem ipsum nec risus. Aliquam et tincidunt nisi. Nam.
@@ -48,4 +50,5 @@
         </div>
     </footer>
 </body>
+
 </html>
