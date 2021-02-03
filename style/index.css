@@ -19,6 +19,9 @@ body {
     .flex-container {
         flex-direction: column;
     }
+    h1 {
+        font-size: 18rem;
+    }
 }
 
 @media(max-width:500px) {
@@ -181,6 +184,7 @@ div.flex-box {
 }
 
 #sideProjDescription {
+    border: black dashed 2px;
     font-size: 24px;
     padding: 10px;
     text-align: center;
